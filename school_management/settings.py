@@ -121,3 +121,26 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# ... your existing settings ...
+
+# Static files (CSS, JavaScript, Images)
+STATIC_URL = 'static/'
+
+# Default primary key field type
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+import os
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# 🔑 Authentication settings
+LOGIN_URL = '/login/'                # Where to redirect if user is not logged in
+LOGIN_REDIRECT_URL = '/students/'    # After login, go to student list
+LOGOUT_REDIRECT_URL = '/login/'      # After logout, go back to login
