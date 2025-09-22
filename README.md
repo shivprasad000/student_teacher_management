@@ -1,1 +1,1 @@
-"# student_teacher_management" 
+"# school_management" 
